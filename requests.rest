@@ -1,0 +1,21 @@
+GET http://localhost:9000/v2/workers
+
+###
+
+POST http://localhost:9000/v2/workers/add
+Content-Type: application/json
+
+{
+    "name": "Eros",
+    "age": "29",
+    "email": "Good@gmail.pt"
+}
+
+###
+
+GET http://localhost:9000/v2/workers/name
+
+###
+
+DELETE http://localhost:9000/v2/workers/del/Eros
+Content-Type: application/json
